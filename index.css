@@ -23,7 +23,7 @@ body {
     animation: rotate 0.56s infinite linear;
     width:50px;
     height:50px;
-    border:12px solid rgb(255, 44, 90);
+    border:12px solid #495f8c;
     border-bottom:12px solid #fff;
     border-radius:50%;
     margin:0;
@@ -70,7 +70,7 @@ header table {
     transition:0.4s ease-in-out;
 }
 #magnify h1:hover{
-    color:rgb(255, 44, 90);
+    color:#495f8c;
     cursor:pointer;
 }
 #img_here {
@@ -82,7 +82,7 @@ header table {
 }
 #logo {
     font-size:24px;
-    color:rgb(255, 44, 90);
+    color:#495f8c;
 }
 #navigation {
     text-align:right;
@@ -127,7 +127,7 @@ header table {
     text-align:left;
 }
 .social {
-    color:rgb(255, 44, 90);
+    color:#495f8c;
     font-size:23px;
     padding:12px 17px;
     border-radius:50%;
@@ -136,18 +136,36 @@ header table {
     font-weight:bold;
     margin:0px 8px;
 }
-.social:hover { 
+.social:hover {
     cursor: pointer;
     color:#fff;
-    background:rgb(255, 44, 90);
+    background:#495f8c;
     box-shadow:0px 10px 30px rgba(255, 66, 107,0.8);
 }
+.icon {
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+}
+.icon.house {
+    background:url("icons/construction.svg") no-repeat;
+    background-size: 60px;
+}
+.icon.cleaning {
+    background:url("icons/person.svg") no-repeat;
+    background-size: 60px;
+}
+.icon.pool {
+    background: url("icons/chlorine.svg") no-repeat;
+    background-size: 60px;
+}
 .btn_one {
+    text-align: center;
     font-size:18px;
     font-family: 'Poppins', sans-serif;
-    color:rgb(255, 44, 90);
+    color:#495f8c;
     background:#fff;
-    border:3px solid rgb(255, 44, 90);
+    border:3px solid #495f8c;
     padding:8px 40px;
     width:35%;
     border-radius:80px;
@@ -156,15 +174,15 @@ header table {
     transition:0.4s ease-in-out;
 }
 .btn_one:hover {
-    box-shadow:0px 10px 30px rgba(255, 44, 90, 0.8);
+    box-shadow:0px 10px 30px rgb(73, 95, 140, 0.8);
     cursor:pointer;
     color:#fff;
-    background:rgb(255, 44, 90);
+    background:#495f8c;
 }
 #rightImage {
     width:100%;
     height:95vh;
-    background:linear-gradient(0deg,rgba(255, 44, 90, 0.8),rgba(2255, 44, 90, 0.8)),url("https://images.unsplash.com/photo-1506057527569-6a0285b2fcc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=60") center center;
+    background:linear-gradient(0deg,rgb(73, 95, 140, 0.8),rgba(242, 183, 5, 0.0)),url("https://images.unsplash.com/photo-1506057527569-6a0285b2fcc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=60") center center;
     background-size:cover;
     background-repeat:no-repeat;
 }
@@ -175,7 +193,7 @@ header table {
 }
 #work h1 {
     padding:5px 0px;
-    border-bottom:4px solid rgb(255, 44, 90);
+    border-bottom:4px solid #495f8c;
     width:6%;
 }
 #photos {
@@ -202,7 +220,7 @@ header table {
 }
 #bio h1 {
     padding:5px 0px;
-    border-bottom:4px solid rgb(255, 44, 90);
+    border-bottom:4px solid #495f8c;
     width:8%;
 }
 #contact {
@@ -211,7 +229,7 @@ header table {
 }
 #contact h1 {
     padding:5px 0px;
-    border-bottom:4px solid rgb(255, 44, 90);
+    border-bottom:4px solid #495f8c;
     width:10%;
 }
 #contact table {
@@ -237,7 +255,7 @@ header table {
     margin:20px 1%;
     background:transparent;
     border:0px;
-    border-bottom:3px solid rgba(255, 44, 90,0.5);
+    border-bottom:3px solid rgba(73, 95, 140, 0.5);
     padding:8px 10px;
     font-family: 'Poppins', sans-serif;
     font-size:18px;
@@ -250,7 +268,7 @@ header table {
     margin:20px 1%;
     padding:8px 10px;
     border:0px;
-    border-bottom:3px solid rgba(255, 44, 90,0.5);
+    border-bottom:3px solid rgba(73, 95, 140, 0.5);
     padding:8px 10px;
     font-family: 'Poppins', sans-serif;
     font-size:18px;
@@ -280,7 +298,7 @@ header table {
     font-weight:bold;
 }
 #footer a {
-    color:rgb(255, 44, 90);
+    color:#495f8c;
     text-decoration:none;
 }
 ::placeholder {
@@ -294,13 +312,13 @@ button:focus {
     height:5px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(0, 0, 0); 
+    background: rgb(0, 0, 0);
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0,0.8); 
+    background: rgba(0, 0, 0,0.8);
 }
 
 @media (max-width: 1000px){
@@ -343,12 +361,12 @@ button:focus {
     padding:6px 30px;
     width:60%;
     margin:4vh auto;
-    box-shadow:0px 10px 20px rgba(255, 44, 90, 0.8);
-    background:rgb(255, 44, 90);
+    box-shadow:0px 10px 20px rgb(73, 95, 140, 0.8);
+    background:#495f8c;
     color:#fff;
     }
     .btn_one:hover {
-        box-shadow:0px 10px 40px rgba(255, 44, 90, 0.8);
+        box-shadow:0px 10px 40px rgb(73, 95, 140, 0.8);
         cursor:pointer;
     }
     #contact table tr td {

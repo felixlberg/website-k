@@ -1,11 +1,12 @@
-var width = $(window).width(); 
+
+var width = $(window).width();
 window.onscroll = function(){
 if ((width >= 1000)){
     if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         $("#header").css("background","#fff");
         $("#header").css("color","#000");
         $("#header").css("box-shadow","0px 0px 20px rgba(0,0,0,0.09)");
-        $("#header").css("padding","4vh 4vw");
+        $("#header").css("padding","2vh 4vw");
         $("#navigation a").hover(function(){
             $(this).css("border-bottom","2px solid rgb(255, 44, 90)");
         },function(){
@@ -49,7 +50,7 @@ setTimeout(function(){
       $("#loading").removeClass("animated fadeOut");
       $("#loading").css("display","none");
     },800);
-},1650);
+},200);
 
 $(document).ready(function(){
     $("a").on('click', function(event) {
@@ -61,7 +62,6 @@ $(document).ready(function(){
         }, 1800, function(){
         window.location.hash = hash;
        });
-       } 
+       }
       });
   });
-  
