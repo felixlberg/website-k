@@ -298,11 +298,11 @@ header table {
     outline:none;
     border-bottom:3px solid rgba(255, 44, 90,1);
 }
-#address {
+/* #address {
     position:relative;
     top:-25px;
     left:30px;
-}
+} */
 #footer {
     width:100%;
     padding:10vh 0px;
@@ -422,5 +422,8 @@ button:focus {
 @media (max-height: 700px) {
   header {
     padding:0 2vw;
+  }
+  #about h1 {
+    font-size: 35px;
   }
 }
