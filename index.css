@@ -419,3 +419,8 @@ button:focus {
         color:#000;
     }
 }
+@media (max-height: 700px) {
+  header {
+    padding:0 2vw;
+  }
+}
